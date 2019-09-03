@@ -4,5 +4,5 @@ Ma version de la résolution de la série d'énigmes mathématiques proposé par
 Adresse :https://apprendre-en-ligne.net/turing/index.php
 &nbsp;
 ***
-### **Exercices Résolus : 1/256**
+### **Exercices Résolus : 2/256**
 ***

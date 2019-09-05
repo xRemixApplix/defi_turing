@@ -16,6 +16,7 @@ while count < 23456 :
         if nb%j==0:
             # Verif primalite a True
             verif=True
+            break
     # Si Verif primalite est False
     if not verif:
         # Enregistrement du nombre premier trouve et de sa position

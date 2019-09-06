@@ -23,6 +23,6 @@ while count < 23456 :
         id=nb
         count+=1
     # Increment du nombre verifiée
-    nb+=1
+    nb+=2
 # Affichage du 23456eme nombre premier
 print("{}".format(id))

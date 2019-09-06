@@ -1,22 +1,40 @@
-#-*- coding: utf8 -*-
 
+#version python 3.4 
+# -*- coding: utf-8 -*- 
 import math
+import time
 
 # Initialisation des variables
-somme=5
-i=5
+n=10000000
+premiers=[True]*n # A priori tous premiers au départ
+premiers[0]=False # 0 n'est pas premier 
+premiers[1]=False # 1 non plus 
+racine=math.sqrt(n) # La borne pour les tests (enregistré pour éviter de refaire le calcul à chaque tour de boucle)
+somme = 0
+ 
+# La fonction qui dit pour chaque element de la iste nombre s'ils sont premier ou no
+def eratosthene (): 
+    i=2 
+    while i <= racine: 
+        k=2 
+        h=(n-1)/i
+        while k<=h: 
+            premiers[k*i]=False 
+            k+=1 
+        # Après i=2 ou 3, il n'y a plus de nombre premier consecutif
+        if i<3:
+            j=i+1
+        else:
+            j=i+2 
+        # Si premiers[j] deja egal à False alors on passe à l'index suivant afin d'eviter des tours de boucles inutiles
+        while not premiers[j]: 
+            j+=1 
+        i=j 
+ 
 
-while i < 10000000:
-    verif=False
-    for j in range(2, int(math.sqrt(i))+1):
-        if i%j==0:
-            verif=True
-            break
+eratosthene()
+for i in range(0,n):
+    if premiers[i]:
+        somme += i
 
-    if not verif:
-        print(i)
-        somme+=i
-
-    i+=2
-        
-print("{}".format(somme))
+print(somme)

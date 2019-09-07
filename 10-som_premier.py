@@ -12,7 +12,7 @@ premiers[1]=False # 1 non plus
 racine=math.sqrt(n) # La borne pour les tests (enregistré pour éviter de refaire le calcul à chaque tour de boucle)
 somme = 0
  
-# La fonction qui dit pour chaque element de la iste nombre s'ils sont premier ou no
+# La fonction qui dit pour chaque element de la iste s'il est un nombre premier ou non
 def eratosthene (): 
     i=2 
     while i <= racine: 

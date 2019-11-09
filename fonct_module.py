@@ -19,4 +19,4 @@ def miroir(n):
     # Inversion de la liste
     list.reverse()
     # On retourne la chaine transformer en entier
-    return int("".join(list))
+    return int("".join(list)),"".join(list)

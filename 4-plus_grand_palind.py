@@ -11,7 +11,7 @@ for i in range (100, 999):
         # Nombre a tester = produit de i et j
         num_a_tester=i*j
         # Si on trouve un palindrome et qu'il est supérieur au plus grand palindrome trouvé jusqu'à maintenant
-        if num_a_tester==miroir(num_a_tester) and num_a_tester>palind:
+        if num_a_tester==miroir(num_a_tester)[0] and num_a_tester>palind:
             # Affection du palindrome à la variable 'palind'
             palind=num_a_tester
 

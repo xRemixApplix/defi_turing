@@ -18,8 +18,7 @@ while i <= 4000000 :
     #######################################
 
     # Mise a jour des valeurs
-    prec = i
-    i = fibo_numb
+    prec,i = i,fibo_numb
 
 
 # Affichage de la reponse
